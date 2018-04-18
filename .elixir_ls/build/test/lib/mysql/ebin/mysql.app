@@ -1,9 +1,0 @@
-{application,mysql,
-             [{description,[77,121,83,81,76,47,79,84,80,32,8211,32,77,121,83,
-                            81,76,32,100,114,105,118,101,114,32,102,111,114,
-                            32,69,114,108,97,110,103,47,79,84,80,10]},
-              {modules,[mysql,mysql_cache,mysql_encode,mysql_protocol,
-                        mysql_sock_ssl,mysql_sock_tcp]},
-              {registered,[]},
-              {vsn,"1.3.1"},
-              {applications,[kernel,stdlib,elixir,logger]}]}.
