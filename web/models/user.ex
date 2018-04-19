@@ -1,9 +1,17 @@
-defmodule Hello.User do
-  use Hello.Web, :model
-    schema "users" do
-    field :name, :string
-    field :username, :string
-    field :password, :string, virtual: true
-    field :password_hash, :string
+defmodule Hello.Accounts.User do
+  use Ecto.Schema
+  import Ecto.Changeset
+
+
+  schema "cms_users" do
+
+    timestamps()
+  end
+
+  @doc false
+  def changeset(user, attrs) do
+    user
+    |> cast(attrs, [])
+    |> validate_required([])
   end
 end
