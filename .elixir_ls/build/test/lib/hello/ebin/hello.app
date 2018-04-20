@@ -1,8 +1,5 @@
 {application,hello,
-             [{applications,[kernel,stdlib,elixir,logger,gettext,
-                             phoenix_pubsub,cowboy,phoenix_html,phoenix,
-                             postgrex,mariaex,phoenix_ecto]},
-              {description,"hello"},
+             [{description,"hello"},
               {modules,['Elixir.Hello','Elixir.Hello.Accounts',
                         'Elixir.Hello.Accounts.User',
                         'Elixir.Hello.AppController','Elixir.Hello.AppView',
@@ -20,6 +17,7 @@
                         'Elixir.Hello.UserSocket','Elixir.Hello.UserView',
                         'Elixir.Hello.Web','Elixir.HelloWeb.ChangesetView']},
               {registered,[]},
-              {vsn,"0.0.1"},
+              {vsn,"0.0.3"},
               {mod,{'Elixir.Hello',[]}},
-              {extra_applications,[logger]}]}.
+              {extra_applications,[logger]},
+              {applications,[kernel,stdlib,elixir,logger,edeliver]}]}.
